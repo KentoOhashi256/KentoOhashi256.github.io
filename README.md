@@ -22,3 +22,8 @@ Google Sites版の文章を変えず、Apple系の大きな余白・タイポグ
 この初稿では、現在のGoogle Sitesで使われているGoogleusercontent画像URLを参照しています。
 もしGitHub Pages上で画像だけ表示されない場合は、元画像を `assets/images/` に保存して、各HTMLの `src=` をローカルパスへ置き換えるのが安定です。
 YouTube埋め込みは既存動画IDをそのまま使用しています。
+
+## Flying USB Web版
+`games/flying-usb/` にUnity Webビルドを追加しています。Flying USBの作品ページから「プレイする」で開けます。
+
+Unityの `FlyingUSB_Web.data.unityweb` は約160MBあり、GitHubの通常Gitでは100MiB超の単一ファイルをPushできないため、この配布物では3つのチャンクに分割しています。`games/flying-usb/index.html` がブラウザ上で自動的に連結してUnityへ渡すため、チャンクのファイル名は変更しないでください。

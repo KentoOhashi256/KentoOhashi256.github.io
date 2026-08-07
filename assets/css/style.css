@@ -183,3 +183,49 @@ footer { background:var(--surface); padding:40px 24px 54px; color:var(--muted); 
   html { scroll-behavior:auto; }
   .reveal { opacity:1; transform:none; transition:none; }
 }
+
+/* Flying USB Web build */
+.play-section {
+  padding: 20px 24px 150px;
+  background: #fff;
+  text-align: center;
+}
+.play-inner {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: clamp(52px, 8vw, 92px) 24px;
+  border-radius: 32px;
+  background: var(--surface);
+}
+.play-kicker {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 17px;
+  font-weight: 650;
+}
+.play-inner h2 {
+  margin: 0;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -.045em;
+}
+.play-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  min-height: 44px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 550;
+  transition: transform .2s ease, filter .2s ease;
+}
+.play-button:hover { filter: brightness(1.06); transform: translateY(-1px); }
+.play-note { margin: 18px 0 0; color: var(--muted); font-size: 13px; }
+@media (max-width: 780px) {
+  .play-section { padding: 8px 12px 96px; }
+  .play-inner { border-radius: 24px; }
+}
